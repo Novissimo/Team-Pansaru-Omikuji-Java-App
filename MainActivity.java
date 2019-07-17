@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
                             " ",
                             };
                         Toast.makeText(MainActivity.this, randomStrings[new Random().nextInt(randomStrings.length -1)],Toast.LENGTH_LONG).show();
+                        // Use "getApplicationContext()" if "MainActivity.this" doesnt work
                     }
                 });
     }
