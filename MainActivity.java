@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
                             "あなたへの良い知らせ、そしてあなたの親族すべて",
                             "悪い兆候がある...",
                             "あなたは神秘的な見知らぬ人によって訪問されるでしょう.",
+                            " ",
                             };
                         Toast.makeText(MainActivity.this, randomStrings[new Random().nextInt(randomStrings.length -1)],Toast.LENGTH_LONG).show();
                     }
