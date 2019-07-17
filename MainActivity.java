@@ -18,7 +18,12 @@ public class MainActivity extends AppCompatActivity {
                 omikujiButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(MainActivity.this, "あなたへの良い知らせ、そしてあなたの親族すべて",Toast.LENGTH_LONG).show();
+                        String[] randomStrings = new String[] {
+                            "あなたへの良い知らせ、そしてあなたの親族すべて",
+                            "悪い兆候がある...",
+                            "あなたは神秘的な見知らぬ人によって訪問されるでしょう.",
+                            };
+                        Toast.makeText(MainActivity.this, randomString[new Random().nextInt(randomStrings.length -1)],Toast.LENGTH_LONG).show();
                     }
                 });
     }
