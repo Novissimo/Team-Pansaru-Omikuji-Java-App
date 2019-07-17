@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
                             "悪い兆候がある...",
                             "あなたは神秘的な見知らぬ人によって訪問されるでしょう.",
                             };
-                        Toast.makeText(MainActivity.this, randomString[new Random().nextInt(randomStrings.length -1)],Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, randomStrings[new Random().nextInt(randomStrings.length -1)],Toast.LENGTH_LONG).show();
                     }
                 });
     }
