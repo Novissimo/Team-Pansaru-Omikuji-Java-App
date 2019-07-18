@@ -7,6 +7,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Random;
+
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -18,14 +21,13 @@ public class MainActivity extends AppCompatActivity {
                 omikujiButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        String[] randomStrings = new String[] {
-                            "あなたへの良い知らせ、そしてあなたの親族すべて",
-                            "悪い兆候がある...",
-                            "あなたは神秘的な見知らぬ人によって訪問されるでしょう.",
-                            " ",
+                            String[] randomStrings = new String[] {
+                                    "あなたへの良い知らせ、そしてあなたの親族すべて",
+                                    "悪い兆候がある...",
+                                    "あなたは神秘的な見知らぬ人によって訪問されるでしょう.",
+                                    " ",
                             };
                         Toast.makeText(MainActivity.this, randomStrings[new Random().nextInt(randomStrings.length -1)],Toast.LENGTH_LONG).show();
-                        // Use "getApplicationContext()" if "MainActivity.this" doesnt work
                     }
                 });
     }
